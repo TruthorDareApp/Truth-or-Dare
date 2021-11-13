@@ -102,35 +102,23 @@ Play if you dare or truth, I guess.
 
 
 ### Networking
-- [Add list of network requests by screen ]
 - List of network requests by screen
 * Home Feed Screen
-    * (Read/Get) Query all posts where isCompleted is true
-    ```
-    let query = PFQuery(className:"Post")
-    query.whereKey("author", equalTo: currentUser)
-    query.order(byDescending: "createdAt")
-    query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
-       if let error = error { 
-          print(error.localizedDescription)
-       } else if let posts = posts {
-          print("Successfully retrieved \(posts.count) posts.")
-      // TODO: Do something with posts...
-       }
-    }
-    ```
+    * (Read/GET) Query all posts where isCompleted is true
+    * (Create/POST) Create a new like on a post
 * Create Request Screen
-    * (Create/Post) Create new postType
-    * (Create/Post)
-    * (Create/Post)
-    * (Create/Post)
+    * (Create/POST) Create new postType
+    * (Create/POST) Create request createdAt DateTime
+    * (Create/POST) Create isComplete and mark as false
+    * (Create/POST) Create dollarAmount
 * Create Post Screen
-    * (Create/POST) Create a new post object
+    * (Read/GET) Query all requests where isCompleted is marked false, then display one truth request and one dare request
+    * (Read/GET) Get dollarAmount
+    * (Create/POST) Create new video file
+    * (Create/POST) Create new post createdAt DateTime
+    * (Update/PUT) Mark isComplete as true
 * Profile Screen
     * (Read/GET) Query logged in user object
 
-
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
 
 
