@@ -17,7 +17,7 @@ Play if you dare or truth, I guess.
 
 - **Category:** Social Gaming
 - **Mobile:** This app would be primarily developed for mobile. While in the future, it could be just as viable on a computer, we believe this app would work best as a mobile app. 
-- **Story:** Allows users to play the game "truth or dare" with other users online. 
+- **Story:** ALlows users to play the game "truth or dare" with other users online. 
 - **Market:** All ages.
 - **Habit:** Users can use the app during leisure time.
 - **Scope:** First this app will just start off as a simple "truth or dare" app. In the future we could add certain monetization options so "players" could be incentivized to do certain "truths" or "dares".
