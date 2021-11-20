@@ -28,7 +28,7 @@ Play if you dare or truth, I guess.
 
 **Required Must-have Stories**
 
-- [ ] Sign-up/Login page
+- [x] Sign-up/Login page
 - [ ] Registration page 
 - [ ] Home screen where the user can see the videos of truths and dares
 - [ ] Logout Screen
