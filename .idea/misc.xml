@@ -3,21 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/leafi/Desktop/Truth-or-Dare-prototype/app/src/main/res/drawable/loginbtn.xml" value="0.15885416666666666" />
-        <entry key="..\:/Users/leafi/Desktop/Truth-or-Dare-prototype/app/src/main/res/drawable/truth.xml" value="0.2890625" />
-        <entry key="..\:/Users/leafi/Desktop/Truth-or-Dare-prototype/app/src/main/res/font/bungee.xml" value="0.584375" />
-        <entry key="..\:/Users/leafi/Desktop/Truth-or-Dare-prototype/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/leafi/Desktop/Truth-or-Dare-prototype/app/src/main/res/layout/homepage.xml" value="0.33" />
-        <entry key="..\:/Users/leafi/Desktop/Truth-or-Dare-prototype/app/src/main/res/layout/initial_launch.xml" value="0.5" />
-        <entry key="..\:/Users/leafi/Desktop/Truth-or-Dare-prototype/app/src/main/res/layout/login_activity.xml" value="0.5" />
-        <entry key="..\:/Users/leafi/Desktop/Truth-or-Dare-prototype/app/src/main/res/layout/playWatchScreen.xml" value="0.33" />
-        <entry key="..\:/Users/leafi/Desktop/Truth-or-Dare-prototype/app/src/main/res/layout/play_activity.xml" value="0.5" />
-        <entry key="..\:/Users/leafi/Desktop/Truth-or-Dare-prototype/app/src/main/res/layout/play_watch_screen.xml" value="0.21" />
-        <entry key="..\:/Users/leafi/Desktop/Truth-or-Dare-prototype/app/src/main/res/layout/profile_activity.xml" value="0.5" />
-        <entry key="..\:/Users/leafi/Desktop/Truth-or-Dare-prototype/app/src/main/res/layout/signup_activity.xml" value="0.33" />
-        <entry key="..\:/Users/leafi/Desktop/Truth-or-Dare-prototype/app/src/main/res/layout/splash_screen.xml" value="0.196875" />
-        <entry key="..\:/Users/leafi/Desktop/Truth-or-Dare-prototype/app/src/main/res/layout/template.xml" value="0.25" />
-        <entry key="..\:/Users/leafi/Desktop/Truth-or-Dare-prototype/app/src/main/res/layout/watch_activity.xml" value="0.75" />
+        <entry key="..\:/Private/School/IVC/Sophmore Fall/Code Path Android Development/Truth-or-Dare/app/src/main/res/layout/homepage.xml" value="0.3307291666666667" />
+        <entry key="..\:/Private/School/IVC/Sophmore Fall/Code Path Android Development/Truth-or-Dare/app/src/main/res/layout/profile_activity.xml" value="0.3307291666666667" />
       </map>
     </option>
   </component>
@@ -26,12 +13,5 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
-  </component>
-  <component name="VisualizationToolProject">
-    <option name="state">
-      <ProjectState>
-        <option name="scale" value="0.1" />
-      </ProjectState>
-    </option>
   </component>
 </project>
