@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relativeLayout">
+
+    //I know the icon picture positioning is off. Might come back at a later date and try to fix it
+    <Button
+        android:id="@+id/playerBtn"
+        android:layout_width="297dp"
+        android:layout_height="192dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="367dp"
+        android:backgroundTint="#457B9D"
+        android:drawableTop="@drawable/play"
+        android:fontFamily="@font/bungee"
+        android:text="PLAYER"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <Button
+        android:id="@+id/watcherBtn"
+        android:layout_width="297dp"
+        android:layout_height="192dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="128dp"
+        android:backgroundTint="#E63946"
+        android:drawableTop="@drawable/watcher"
+        android:fontFamily="@font/bungee"
+        android:text="WATCHER"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <ImageButton
+        android:id="@+id/homeBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginBottom="0dp"
+        android:backgroundTint="#FFFFFF"
+        app:srcCompat="@drawable/home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageButton
+        android:id="@+id/playBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="194dp"
+        android:layout_marginBottom="1dp"
+        android:backgroundTint="#FFFFFF"
+        app:srcCompat="@drawable/post"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageButton
+        android:id="@+id/profileBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="303dp"
+        android:layout_marginBottom="0dp"
+        android:backgroundTint="#FFFFFF"
+        app:srcCompat="@drawable/user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
