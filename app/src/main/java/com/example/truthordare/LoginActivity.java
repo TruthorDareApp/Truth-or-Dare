@@ -1,25 +1,53 @@
 package com.example.truthordare;
 
+import static android.content.ContentValues.TAG;
+
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.parse.LogInCallback;
+import com.parse.Parse;
+import com.parse.ParseException;
+import com.parse.ParseUser;
+
 public class LoginActivity extends AppCompatActivity {
+
+    public static final String TAG = "LoginActivity";
+    private EditText etUsername;
+    private EditText etPassword;
+    private Button loginBtn;
+    private Button signUpBtn;
+
+    int failedAttempts = 0;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_activity);
 
-        Button loginBtn2 = (Button) findViewById(R.id.loginBtn2);
-        Button signUpBtn = (Button) findViewById(R.id.signUpBtn);
+        loginBtn = findViewById(R.id.loginBtn2);
+        signUpBtn = findViewById(R.id.signUpBtn);
 
-        loginBtn2.setOnClickListener(new View.OnClickListener() {
+        etUsername = findViewById(R.id.etUsername);
+        etPassword = findViewById(R.id.etPassword);
+
+        loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openHomePage();
+                String username = etUsername.getText().toString();
+                String password = etPassword.getText().toString();
+                loginAndOpenHomePage(username, password);
+                failedAttempts++;
+                if (failedAttempts > 5) {
+                    Toast.makeText(LoginActivity.this, "Please register if you do not have an account.", Toast.LENGTH_SHORT).show();
+                }
+
             }
         });
 
@@ -31,12 +59,29 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    public void openHomePage(){;
-        Intent intent = new Intent(this, HomePage.class);
-        startActivity(intent);
+    private void loginAndOpenHomePage(String username, String password) {
+        ParseUser.logInInBackground(username, password, new LogInCallback() {
+            @Override
+            public void done(ParseUser user, ParseException e) {
+
+                if (e != null) {
+                    Log.i(TAG, "Issue with login:", e);
+                    Toast.makeText(LoginActivity.this, "" + e, Toast.LENGTH_LONG).show();
+                    return;
+                }
+                goToHomePage();
+                Toast.makeText(LoginActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
-    public void openSignUpActivity(){;
+    private void goToHomePage() {
+        Intent intent = new Intent(this, HomePage.class);
+        startActivity(intent);
+        finish();
+    }
+
+    public void openSignUpActivity(){
         Intent intent = new Intent(this, SignupActivity.class);
         startActivity(intent);
     }
