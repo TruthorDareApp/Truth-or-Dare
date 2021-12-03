@@ -29,10 +29,10 @@ Play if you dare or truth, I guess.
 **Required Must-have Stories**
 
 - [x] Sign-up/Login page
-- [ ] Registration page 
-- [ ] Home screen where the user can see the videos of truths and dares
+- [x] Registration page 
+- [x] Home screen where the user can see the videos of truths and dares
 - [ ] Logout Screen
-- [ ] Profile page for each user
+- [x] Profile page for each user
 - [ ] Clips should be labeled truth or dare 
 - [ ] Settings page
 
