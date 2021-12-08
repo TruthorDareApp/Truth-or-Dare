@@ -81,6 +81,7 @@ public class ComposeFragment extends Fragment {
 
                 ParseUser currentUser = ParseUser.getCurrentUser();
                 saveRequest(currentUser, description, dollarAmt, reqType, false);
+                Log.i(TAG, "Button was clicked");
             }
         });
     }
