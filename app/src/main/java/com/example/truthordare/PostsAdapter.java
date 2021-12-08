@@ -1,14 +1,19 @@
 package com.example.truthordare;
 
 import android.content.Context;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.MediaController;
 import android.widget.TextView;
 import android.widget.VideoView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.parse.Parse;
+import com.parse.ParseFile;
 
 import java.util.List;
 
@@ -49,14 +54,14 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder>
     {
 
         private TextView username;
-        private VideoView video;
+        private VideoView videoView;
         private TextView tvDescription;
 
         public ViewHolder(@NonNull View itemView)
         {
             super(itemView);
             username = itemView.findViewById(R.id.userName);
-            video = itemView.findViewById(R.id.video);
+            videoView = itemView.findViewById(R.id.video);
             tvDescription = itemView.findViewById(R.id.tvDescription);
         }
 
@@ -65,7 +70,15 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder>
             //Bind the post data to the view elements
             tvDescription.setText(post.getDescription());
             username.setText(post.getUser().getUsername());
-            
+            ParseFile video = post.getVideo();
+            Uri uri = Uri.parse(String.valueOf(video));
+
+            if (videoView != null)
+            {
+                videoView.setVideoURI(uri);
+                videoView.start();
+            }
+
         }
     }
 

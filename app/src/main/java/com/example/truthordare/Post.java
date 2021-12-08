@@ -13,6 +13,7 @@ public class Post extends Request
     public static final String KEY_VIDEO = "video";
     public static final String KEY_USER = "user";
     public static final String KEY_REQUEST = "request";
+    public static final String KEY_CREATED_KEY = "createdAt";
 
     public ParseObject getRequest()
     {
@@ -43,5 +44,7 @@ public class Post extends Request
     {
         put(KEY_USER, user);
     }
+
+
 
 }
