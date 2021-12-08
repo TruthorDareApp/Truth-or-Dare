@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity
                         fragment = new ProfileFragment();
                         break;
                     default:
-                        fragment = new ComposeFragment();
+                        fragment = new PostsFragment();
                         break;
                 }
                 fragmentManager.beginTransaction().replace(R.id.flContainer, fragment).commit();
