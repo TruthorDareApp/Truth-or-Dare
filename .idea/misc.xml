@@ -3,16 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Warre/AndroidStudioProjects/Truth-or-Dare-prototype/app/src/main/res/drawable/togglebutton_off.xml" value="0.3074074074074074" />
-        <entry key="..\:/Users/Warre/AndroidStudioProjects/Truth-or-Dare-prototype/app/src/main/res/drawable/togglebutton_on.xml" value="1.1857142857142857" />
-        <entry key="..\:/Users/Warre/AndroidStudioProjects/Truth-or-Dare-prototype/app/src/main/res/drawable/togglebutton_selector.xml" value="0.3074074074074074" />
-        <entry key="..\:/Users/Warre/AndroidStudioProjects/Truth-or-Dare-prototype/app/src/main/res/layout/activity_login.xml" value="0.27291666666666664" />
-        <entry key="..\:/Users/Warre/AndroidStudioProjects/Truth-or-Dare-prototype/app/src/main/res/layout/activity_main.xml" value="0.2857142857142857" />
-        <entry key="..\:/Users/Warre/AndroidStudioProjects/Truth-or-Dare-prototype/app/src/main/res/layout/activity_playscreen.xml" value="0.24351851851851852" />
-        <entry key="..\:/Users/Warre/AndroidStudioProjects/Truth-or-Dare-prototype/app/src/main/res/layout/fragment_compose.xml" value="0.1" />
-        <entry key="..\:/Users/Warre/AndroidStudioProjects/Truth-or-Dare-prototype/app/src/main/res/layout/fragment_post.xml" value="0.27291666666666664" />
-        <entry key="..\:/Users/Warre/AndroidStudioProjects/Truth-or-Dare-prototype/app/src/main/res/layout/item_post.xml" value="0.3828571428571429" />
-        <entry key="..\:/Users/Warre/AndroidStudioProjects/Truth-or-Dare-prototype/app/src/main/res/menu/menu_bottom_navigation.xml" value="0.2734375" />
+        <entry key="..\:/Private/School/IVC/Sophmore Fall/Code Path Android Development/Truth-or-Dare/app/src/main/res/layout/homepage.xml" value="0.3307291666666667" />
+        <entry key="..\:/Private/School/IVC/Sophmore Fall/Code Path Android Development/Truth-or-Dare/app/src/main/res/layout/initial_launch.xml" value="0.3307291666666667" />
+        <entry key="..\:/Private/School/IVC/Sophmore Fall/Code Path Android Development/Truth-or-Dare/app/src/main/res/layout/play_activity.xml" value="0.3307291666666667" />
+        <entry key="..\:/Private/School/IVC/Sophmore Fall/Code Path Android Development/Truth-or-Dare/app/src/main/res/layout/profile_activity.xml" value="0.3307291666666667" />
+        <entry key="..\:/Private/School/IVC/Sophmore Fall/Code Path Android Development/Truth-or-Dare/app/src/main/res/layout/signup_activity.xml" value="0.3307291666666667" />
+        <entry key="..\:/Users/Warre/OneDrive/Documents/GitHub/Truth-or-Dare/app/src/main/res/layout/activity_main.xml" value="0.15830800405268491" />
+        <entry key="..\:/Users/Warre/OneDrive/Documents/GitHub/Truth-or-Dare/app/src/main/res/layout/activity_playscreen.xml" value="0.1734375" />
+        <entry key="..\:/Users/Warre/OneDrive/Documents/GitHub/Truth-or-Dare/app/src/main/res/layout/fragment_compose.xml" value="0.11277173913043478" />
+        <entry key="..\:/Users/Warre/OneDrive/Documents/GitHub/Truth-or-Dare/app/src/main/res/layout/fragment_posts.xml" value="0.11277173913043478" />
+        <entry key="..\:/Users/Warre/OneDrive/Documents/GitHub/Truth-or-Dare/app/src/main/res/layout/fragment_profile.xml" value="0.11277173913043478" />
+        <entry key="..\:/Users/Warre/OneDrive/Documents/GitHub/Truth-or-Dare/app/src/main/res/layout/item_post.xml" value="0.11277173913043478" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/fragment_compose.xml" value="0.38385416666666666" />
+        <entry key="app/src/main/res/layout/fragment_posts.xml" value="0.3037037037037037" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/item_post.xml" value="0.33" />
+        <entry key="app/src/main/res/menu/menu_bottom_navigation.xml" value="0.5" />
       </map>
     </option>
   </component>
