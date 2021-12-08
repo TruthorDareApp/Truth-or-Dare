@@ -40,4 +40,6 @@ dependencies {
     // Parse
     implementation "com.github.parse-community.Parse-SDK-Android:parse:1.18.5"
     implementation 'com.squareup.okhttp3:logging-interceptor:3.8.1' // for logging API calls to LogCat
+    implementation 'com.cottacush:CurrencyEditText:0.0.9'
+
 }
