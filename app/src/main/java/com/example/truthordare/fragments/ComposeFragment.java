@@ -16,13 +16,10 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.cottacush.android.currencyedittext.CurrencyEditText;
-import com.example.truthordare.Post;
 import com.example.truthordare.R;
 import com.example.truthordare.Request;
 import com.parse.FindCallback;
-import com.parse.Parse;
 import com.parse.ParseException;
-import com.parse.ParseFile;
 import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.parse.SaveCallback;
