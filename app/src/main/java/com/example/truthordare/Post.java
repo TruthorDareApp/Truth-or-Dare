@@ -6,7 +6,7 @@ import com.parse.ParseObject;
 import com.parse.ParseUser;
 
 @ParseClassName("Post")
-public class Post extends ParseObject
+public class Post extends Request
 {
 
     public static final String KEY_LIKES = "likeCount";
@@ -14,12 +14,12 @@ public class Post extends ParseObject
     public static final String KEY_USER = "user";
     public static final String KEY_REQUEST = "request";
 
-    public String getRequest()
+    public ParseObject getRequest()
     {
-        return getString(KEY_REQUEST);
+        return new ParseObject(KEY_REQUEST);
     }
 
-    public void setRequest(String request)
+    public void setRequest(ParseObject request)
     {
         put (KEY_REQUEST, request);
     }
