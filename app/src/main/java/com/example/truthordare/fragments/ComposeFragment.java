@@ -23,6 +23,7 @@ import com.parse.FindCallback;
 import com.parse.Parse;
 import com.parse.ParseException;
 import com.parse.ParseFile;
+import com.parse.ParseObject;
 import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.parse.SaveCallback;
@@ -105,6 +106,7 @@ public class ComposeFragment extends Fragment {
                 }
                 Log.i(TAG, "post save was successful");
                 Toast.makeText(getContext(), "Saved post!", Toast.LENGTH_SHORT).show();
+                togBtnReq.setChecked(false);
                 etDescription.setText("");
                 etDollarAmt.setText("");
                 //set videoFile to empty;
