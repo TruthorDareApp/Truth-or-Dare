@@ -27,7 +27,7 @@ public class ProfileFragment extends PostsFragment
         query.include(Post.KEY_USER);
         query.whereEqualTo(Post.KEY_USER, ParseUser.getCurrentUser());
         query.setLimit(20);
-        query.addDescendingOrder(Post.KEY_CREATED_KEY);
+        query.addDescendingOrder(Post.KEY_CREATED);
         query.findInBackground(new FindCallback<Post>()
         {
             @Override
@@ -46,7 +46,7 @@ public class ProfileFragment extends PostsFragment
             }
         });
     }
-
+/*
     public ProfileFragment()
     {
         // Required empty public constructor
@@ -67,7 +67,7 @@ public class ProfileFragment extends PostsFragment
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_profile, container, false);
     }
-
+*/
 
 
 }

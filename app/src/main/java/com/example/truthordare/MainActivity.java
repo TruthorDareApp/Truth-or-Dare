@@ -8,7 +8,7 @@ import androidx.fragment.app.FragmentManager;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import com.example.truthordare.Fragments.ComposeFragment;
+import com.example.truthordare.Fragments.RequestFragment;
 import com.example.truthordare.Fragments.PostsFragment;
 import com.example.truthordare.Fragments.ProfileFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -37,15 +37,13 @@ public class MainActivity extends AppCompatActivity
             {
                 Fragment fragment;
                 switch (menuItem.getItemId()) {
-                    case R.id.action_home:
-                        fragment = new PostsFragment();
-                        break;
                     case R.id.action_compose:
-                        fragment = new ComposeFragment();
+                        fragment = new RequestFragment();
                         break;
                     case R.id.action_profile:
                         fragment = new ProfileFragment();
                         break;
+                    case R.id.action_home:
                     default:
                         fragment = new PostsFragment();
                         break;

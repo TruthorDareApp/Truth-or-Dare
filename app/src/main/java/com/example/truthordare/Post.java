@@ -13,7 +13,7 @@ public class Post extends Request
     public static final String KEY_VIDEO = "video";
     public static final String KEY_USER = "user";
     public static final String KEY_REQUEST = "request";
-    public static final String KEY_CREATED_KEY = "createdAt";
+    public static final String KEY_CREATED = "createdAt";
 
     public ParseObject getRequest()
     {
@@ -23,6 +23,11 @@ public class Post extends Request
     public void setRequest(ParseObject request)
     {
         put (KEY_REQUEST, request);
+    }
+
+    @Override
+    public String getDescription() {
+        return super.getDescription();
     }
 
     public ParseFile getVideo()
@@ -45,6 +50,12 @@ public class Post extends Request
         put(KEY_USER, user);
     }
 
+    public int getLikeCount() {
+        return getInt(KEY_LIKES);
+    }
 
+    public void setLikeCount(int likeCount) {
+        put(KEY_LIKES, likeCount);
+    }
 
 }

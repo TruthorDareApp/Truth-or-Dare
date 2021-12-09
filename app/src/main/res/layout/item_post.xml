@@ -19,8 +19,8 @@
     <VideoView
         android:id="@+id/video"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_height="500dp"
+        android:layout_margin="5dp" />
 
     <TextView
         android:id="@+id/tvDescription"
@@ -29,4 +29,8 @@
         tools:layout_editor_absoluteX="26dp"
         tools:layout_editor_absoluteY="385dp"
         tools:text="description" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
 </LinearLayout>

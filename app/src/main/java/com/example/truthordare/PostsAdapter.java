@@ -1,8 +1,12 @@
 package com.example.truthordare;
 
 import android.content.Context;
+import android.media.MediaPlayer;
 import android.net.Uri;
+import android.net.UrlQuerySanitizer;
+import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.MediaController;
@@ -14,12 +18,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.parse.Parse;
 import com.parse.ParseFile;
+import com.parse.ParseObject;
 
 import java.util.List;
 
 public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder>
 {
-
+    public static final String TAG = "PostsAdapter";
     private Context context;
     private List<Post> posts;
 
@@ -70,17 +75,50 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder>
             //Bind the post data to the view elements
             tvDescription.setText(post.getDescription());
             username.setText(post.getUser().getUsername());
-            ParseFile video = post.getVideo();
-            Uri uri = Uri.parse(String.valueOf(video));
+            ParseFile postVideo = post.getVideo();
 
-            if (videoView != null)
+            if (postVideo != null)
             {
-                videoView.setVideoURI(uri);
+                String url = postVideo.getUrl();
+                Log.i(TAG, "set video");
+                videoView.setVideoURI(Uri.parse(url));
                 videoView.start();
+
+                videoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mediaPlayer) {
+                        videoView.start();
+                    }
+                });
+
+                //pause/play on video touch
+                videoView.setOnTouchListener(new View.OnTouchListener() {
+
+                    int currentPosition;
+                    @Override
+                    public boolean onTouch(View view, MotionEvent motionEvent) {
+                        if(videoView.isPlaying()) {
+                            videoView.pause();
+                            currentPosition = videoView.getCurrentPosition();
+                        }
+                        else {
+                            videoView.start();
+                        }
+                        return false;
+                    }
+                });
             }
 
         }
     }
 
+    public void clear() {
+        posts.clear();
+        notifyDataSetChanged();
+    }
 
+    public void addAll(List<Post> allPosts) {
+        posts.addAll(allPosts);
+        notifyDataSetChanged();
+    }
 }
