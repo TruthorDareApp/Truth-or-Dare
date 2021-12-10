@@ -12,15 +12,22 @@
         android:layout_height="wrap_content"
         android:padding="8dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="16sp"
         tools:layout_editor_absoluteX="29dp"
         tools:layout_editor_absoluteY="34dp"
         tools:text="Username" />
 
     <VideoView
         android:id="@+id/video"
-        android:layout_width="match_parent"
-        android:layout_height="600dp"
+        android:layout_width="wrap_content"
+        android:layout_height="530dp"
         android:layout_margin="5dp" />
+
+    <TextView
+        android:id="@+id/likes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="likes" />
 
     <TextView
         android:id="@+id/tvDescription"
@@ -32,7 +39,14 @@
         tools:layout_editor_absoluteY="385dp"
         tools:text="description" />
 
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="$$" />
+
     <Space
         android:layout_width="match_parent"
         android:layout_height="10dp" />
+
 </LinearLayout>

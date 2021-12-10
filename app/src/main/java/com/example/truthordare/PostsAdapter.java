@@ -61,6 +61,8 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder>
         private TextView username;
         private VideoView videoView;
         private TextView tvDescription;
+        private TextView likes;
+        private TextView price;
 
         public ViewHolder(@NonNull View itemView)
         {
@@ -68,6 +70,8 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder>
             username = itemView.findViewById(R.id.userName);
             videoView = itemView.findViewById(R.id.video);
             tvDescription = itemView.findViewById(R.id.tvDescription);
+            likes = itemView.findViewById(R.id.likes);
+            price = itemView.findViewById(R.id.price);
         }
 
         public void bind(Post post)
@@ -75,6 +79,8 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder>
             //Bind the post data to the view elements
             tvDescription.setText(post.getDescription());
             username.setText(post.getUser().getUsername());
+            likes.setText(post.getLikeCount() + " likes");
+            price.setText("$" + post.getDollarAmt() + " ");
             ParseFile postVideo = post.getVideo();
 
             if (postVideo != null)

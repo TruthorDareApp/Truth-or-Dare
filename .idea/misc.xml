@@ -16,6 +16,13 @@
         <entry key="..\:/Users/Warre/AndroidStudioProjects/Truth-or-Dare-prototype/app/src/main/res/layout/fragment_request.xml" value="0.27291666666666664" />
         <entry key="..\:/Users/Warre/AndroidStudioProjects/Truth-or-Dare-prototype/app/src/main/res/layout/item_post.xml" value="0.3828571428571429" />
         <entry key="..\:/Users/Warre/AndroidStudioProjects/Truth-or-Dare-prototype/app/src/main/res/menu/menu_bottom_navigation.xml" value="0.2734375" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.5322916666666667" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.5322916666666667" />
+        <entry key="app/src/main/res/layout/activity_playscreen.xml" value="0.5322916666666667" />
+        <entry key="app/src/main/res/layout/fragment_post.xml" value="0.5322916666666667" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.5322916666666667" />
+        <entry key="app/src/main/res/layout/fragment_request.xml" value="0.5322916666666667" />
+        <entry key="app/src/main/res/layout/item_post.xml" value="0.5" />
       </map>
     </option>
   </component>
