@@ -3,15 +3,34 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Private/School/IVC/Sophmore Fall/Code Path Android Development/Truth-or-Dare/app/src/main/res/layout/homepage.xml" value="0.3307291666666667" />
-        <entry key="..\:/Private/School/IVC/Sophmore Fall/Code Path Android Development/Truth-or-Dare/app/src/main/res/layout/initial_launch.xml" value="0.3307291666666667" />
-        <entry key="..\:/Private/School/IVC/Sophmore Fall/Code Path Android Development/Truth-or-Dare/app/src/main/res/layout/play_activity.xml" value="0.3307291666666667" />
-        <entry key="..\:/Private/School/IVC/Sophmore Fall/Code Path Android Development/Truth-or-Dare/app/src/main/res/layout/profile_activity.xml" value="0.3307291666666667" />
-        <entry key="..\:/Private/School/IVC/Sophmore Fall/Code Path Android Development/Truth-or-Dare/app/src/main/res/layout/signup_activity.xml" value="0.3307291666666667" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.300462962962963" />
-        <entry key="app/src/main/res/layout/initial_launch.xml" value="0.300462962962963" />
-        <entry key="app/src/main/res/layout/login_activity.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/signup_activity.xml" value="0.1" />
+        <entry key="..\:/Users/Warre/AndroidStudioProjects/Truth-or-Dare-prototype/app/src/main/res/drawable/togglebutton_off.xml" value="0.3074074074074074" />
+        <entry key="..\:/Users/Warre/AndroidStudioProjects/Truth-or-Dare-prototype/app/src/main/res/drawable/togglebutton_on.xml" value="1.1857142857142857" />
+        <entry key="..\:/Users/Warre/AndroidStudioProjects/Truth-or-Dare-prototype/app/src/main/res/drawable/togglebutton_selector.xml" value="0.3074074074074074" />
+        <entry key="..\:/Users/Warre/AndroidStudioProjects/Truth-or-Dare-prototype/app/src/main/res/layout/activity_login.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Warre/AndroidStudioProjects/Truth-or-Dare-prototype/app/src/main/res/layout/activity_main.xml" value="0.2857142857142857" />
+        <entry key="..\:/Users/Warre/AndroidStudioProjects/Truth-or-Dare-prototype/app/src/main/res/layout/activity_playscreen.xml" value="0.24351851851851852" />
+        <entry key="..\:/Users/Warre/AndroidStudioProjects/Truth-or-Dare-prototype/app/src/main/res/layout/fragment_compose.xml" value="0.1" />
+        <entry key="..\:/Users/Warre/AndroidStudioProjects/Truth-or-Dare-prototype/app/src/main/res/layout/fragment_post.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Warre/AndroidStudioProjects/Truth-or-Dare-prototype/app/src/main/res/layout/fragment_posts.xml" value="0.2734375" />
+        <entry key="..\:/Users/Warre/AndroidStudioProjects/Truth-or-Dare-prototype/app/src/main/res/layout/fragment_profile.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Warre/AndroidStudioProjects/Truth-or-Dare-prototype/app/src/main/res/layout/fragment_request.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Warre/AndroidStudioProjects/Truth-or-Dare-prototype/app/src/main/res/layout/item_post.xml" value="0.3828571428571429" />
+        <entry key="..\:/Users/Warre/AndroidStudioProjects/Truth-or-Dare-prototype/app/src/main/res/menu/menu_bottom_navigation.xml" value="0.2734375" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.5322916666666667" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.5322916666666667" />
+        <entry key="app/src/main/res/layout/activity_playscreen.xml" value="0.5322916666666667" />
+        <entry key="app/src/main/res/layout/fragment_post.xml" value="0.5322916666666667" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.5322916666666667" />
+        <entry key="app/src/main/res/layout/fragment_request.xml" value="0.5322916666666667" />
+        <entry key="app/src/main/res/layout/homepage.xml" value="0.29791666666666666" />
+        <entry key="app/src/main/res/layout/initial_launch.xml" value="0.5328125" />
+        <entry key="app/src/main/res/layout/item_post.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/login_activity.xml" value="0.5328125" />
+        <entry key="app/src/main/res/layout/play_activity.xml" value="0.5328125" />
+        <entry key="app/src/main/res/layout/profile_activity.xml" value="0.5328125" />
+        <entry key="app/src/main/res/layout/signup_activity.xml" value="0.5328125" />
+        <entry key="app/src/main/res/layout/template.xml" value="0.5328125" />
+        <entry key="app/src/main/res/layout/watch_activity.xml" value="0.5328125" />
       </map>
     </option>
   </component>

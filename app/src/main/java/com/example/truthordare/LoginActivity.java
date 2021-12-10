@@ -79,7 +79,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void goToHomePage() {
-        Intent intent = new Intent(this, HomePage.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         finish();
     }

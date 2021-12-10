@@ -49,13 +49,14 @@
         android:ems="10"
         android:fontFamily="@font/roboto"
         android:hint="Password"
+        android:importantForAutofill="no"
         android:inputType="textPassword"
         android:textColor="#000000"
+        android:textColorHint="#7C7C7C"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etUsername"
-        android:importantForAutofill="no" />
+        app:layout_constraintTop_toBottomOf="@+id/etUsername" />
 
     <Button
         android:id="@+id/loginBtn2"
@@ -90,6 +91,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginBtn2" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

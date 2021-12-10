@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#323232">
+    android:background="#FFFFFF">
 
     <Space
         android:id="@+id/space"
@@ -41,14 +41,14 @@
         android:inputType="numberDecimal"
         android:numeric="decimal"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#C8C8C8"
+        android:textColor="#000000"
+        android:textColorHint="#7C7C7C"
         android:textSize="20sp"
+        app:currencySymbol="$"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/space"
-        app:currencySymbol="$"
         app:useCurrencySymbolAsHint="true" />
 
     <EditText
@@ -60,8 +60,8 @@
         android:hint="Enter a request..."
         android:inputType="textMultiLine"
         android:textAlignment="viewStart"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#C8C8C8"
+        android:textColor="#000000"
+        android:textColorHint="#7C7C7C"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
