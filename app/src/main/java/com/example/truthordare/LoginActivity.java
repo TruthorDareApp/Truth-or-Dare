@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,7 +24,6 @@ public class LoginActivity extends AppCompatActivity {
     private EditText etUsername;
     private EditText etPassword;
     private Button loginBtn;
-    private Button signUpBtn;
 
     int failedAttempts = 0;
 
@@ -32,7 +32,6 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.login_activity);
 
         loginBtn = findViewById(R.id.loginBtn2);
-        signUpBtn = findViewById(R.id.signUpBtn);
 
         etUsername = findViewById(R.id.etUsername);
         etPassword = findViewById(R.id.etPassword);
@@ -40,30 +39,34 @@ public class LoginActivity extends AppCompatActivity {
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Log.i(TAG, "Login button clicked");
                 String username = etUsername.getText().toString();
                 String password = etPassword.getText().toString();
-                loginAndOpenHomePage(username, password);
+                if (username.isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "Please enter a valid username.", Toast.LENGTH_SHORT).show();
+                } else if (password.isEmpty()) {
+                    Toast.makeText(getApplicationContext(), "Please enter a your password.", Toast.LENGTH_SHORT).show();
+                } else {
+                    loginAndOpenHomePage(username, password);
+                }
+
                 failedAttempts++;
                 if (failedAttempts > 5) {
                     Toast.makeText(LoginActivity.this, "Please register if you do not have an account.", Toast.LENGTH_SHORT).show();
                 }
-
             }
         });
+    }
 
-        signUpBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openSignUpActivity();
-            }
-        });
+    public void signUpInstead(View v) {
+        openSignUpActivity();
     }
 
     private void loginAndOpenHomePage(String username, String password) {
         ParseUser.logInInBackground(username, password, new LogInCallback() {
             @Override
             public void done(ParseUser user, ParseException e) {
-
+                Log.i(TAG, "Login initiated");
                 if (e != null) {
                     Log.i(TAG, "Issue with login:", e);
                     Toast.makeText(LoginActivity.this, "" + e, Toast.LENGTH_LONG).show();
