@@ -46,13 +46,13 @@ dependencies {
     implementation "com.google.android.material:material:${designSupportVersion}"
 
     //recyclerView
-    implementation "androidx.recyclerview:recyclerview:${recyclerViewVersion}"
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
 
 
 
     //currency
-    implementation "com.cottacush:CurrencyEditText:0.0.3"
     implementation 'android.arch.lifecycle:extensions:1.1.1'
+    implementation 'com.cottacush:CurrencyEditText:0.0.9'
     implementation "android.arch.lifecycle:viewmodel:1.1.0"
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
 }
