@@ -31,15 +31,15 @@ Play if you dare or truth, I guess.
 - [x] Sign-up/Login page
 - [x] Registration page 
 - [x] Home screen where the user can see the videos of truths and dares
-- [ ] Logout Screen
 - [x] Profile page for each user
-- [ ] Clips should be labeled truth or dare 
-- [ ] Settings page
 
 **Optional Nice-to-have Stories**
 
 - [ ] A comment section where people can comment on each post
 - [ ] A follow system where users can follow other users
+- [ ] Clips should be labeled truth or dare 
+- [ ] Settings page
+- [ ] Logout Screen
 
 ### 2. Screen Archetypes
 
